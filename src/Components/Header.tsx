@@ -2,13 +2,9 @@ import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Link } from 'react-router-dom';
 
-
-
-
 const Header : React.FC = () => {
-
   return (
-    <header className="d-flex justify-content-end align-items-center p-3 border-bottom">
+    <header className="d-flex justify-content-end align-items-center p-2 border-bottom">
       <div className="user-info d-flex align-items-center">
         <img
           src="/public/mujer.png"
@@ -24,7 +20,7 @@ const Header : React.FC = () => {
           <br />
           <span className="text-muted">KarlaDiaz@mail.com</span>
         </div>
-        <div className="dropdown ms-3">
+        <div className="dropdown ms-4">
           <button
             className="btn btn-link dropdown-toggle"
             type="button"
@@ -34,7 +30,8 @@ const Header : React.FC = () => {
           >
           </button>
           <ul className="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton">
-            <li><Link className="dropdown-item"  to="/login">
+            <li> <Link className="dropdown-item"  to="/login">
+            <i className="fa-solid fa-power-off me-2"></i>
            Cerrar sesión
             </Link></li>
           </ul>

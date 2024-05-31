@@ -8,6 +8,11 @@ import './App.css'
 /* View paginas del sitio */
 import Login from './Pages/Login';
 import DashboardAdmin from './Pages/Dashboard-Admin';
+import Dashboardempleado from './Pages/Dashboard-Empleado';
+import ViewPerfil from './Pages/ViewPerfil';
+import TaskEmpleado from './Pages/ViewTaskEmpleado';
+import AssignTasksAdmin from './Pages/Assign-tasks';
+import Viewinform from './Pages/ViewInform';
 
 
 const App: React.FC = () => {
@@ -17,7 +22,11 @@ const App: React.FC = () => {
         <Routes>
           <Route path="/login" element={<Login />} />
           <Route path="/DashboardAdmin" element={<DashboardAdmin />} />
-        
+          <Route path="/Dashboardempleado" element={<Dashboardempleado />} />
+          <Route path="/ViewPerfil" element={<ViewPerfil/>} />
+          <Route path="/TaskEmpleado" element={<TaskEmpleado />} />
+          <Route path="/AssignTasksAdmin" element={<AssignTasksAdmin />} />
+          <Route path="/Viewinform" element={<Viewinform/>} />
           <Route path="/" element={<Login />} />
         </Routes>
       </div>
