@@ -57,7 +57,7 @@ const AssignTasksAdmin: React.FC = () => {
                                     {rooms.map((room, index) => (
                                         <Col key={index} xs={12} sm={6} md={4} lg={3} className="mb-4">
                                             <div className="room-card">
-                                                <Card.Img variant="top" src="https://via.placeholder.com/150" alt="Room" className="room-image" />
+                                                <Card.Img variant="top" src="/public/habitacion_Sencilla_8.jpg" alt="Room" className="room-image" />
                                                 <Card.Body className="room-body">
                                                     <Card.Title>{room.number}</Card.Title>
                                                     <Card.Text>Estado: <span className="text-muted">{room.status}</span></Card.Text>
