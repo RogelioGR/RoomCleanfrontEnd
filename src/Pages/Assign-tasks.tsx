@@ -22,6 +22,29 @@ const AssignTasksAdmin: React.FC = () => {
 
     const rooms = [
         { number: 'A01-105', status: 'Por hacer' },
+        { number: 'A01-105', status: 'Por hacer' },
+        { number: 'A01-105', status: 'Por hacer' },
+
+        { number: 'A01-105', status: 'Por hacer' },
+
+        { number: 'A01-105', status: 'Por hacer' },
+
+        { number: 'A01-105', status: 'Por hacer' },
+
+        { number: 'A01-105', status: 'Por hacer' },
+        { number: 'A01-105', status: 'Por hacer' },
+
+        { number: 'A01-105', status: 'Por hacer' },
+
+        { number: 'A01-105', status: 'Por hacer' },
+
+        { number: 'A01-105', status: 'Por hacer' },
+        { number: 'A01-105', status: 'Por hacer' },
+
+        
+        
+
+        
         
     ];
     enum ModalsTasks {

@@ -27,12 +27,29 @@ const DashboardAdmin: React.FC = () => {
   useEffect(() => {
     setTimeout(() => {
       setLoading(false);
-    }, 3000); // el tiempo de carga real
+    }, 2000); 
   }, []);
 
   /* datos de prueba */
   const users: User[] = [
     { Nombre: 'Karla', correo: 'karla@gmmail.com', telefono: '7305477760', NumEmpleado: '123456', img: '/public/mujer.png' }, 
+    { Nombre: 'Karla', correo: 'karla@gmmail.com', telefono: '7305477760', NumEmpleado: '123456', img: '/public/mujer.png' }, 
+    { Nombre: 'Karla', correo: 'karla@gmmail.com', telefono: '7305477760', NumEmpleado: '123456', img: '/public/mujer.png' }, 
+    { Nombre: 'Karla', correo: 'karla@gmmail.com', telefono: '7305477760', NumEmpleado: '123456', img: '/public/mujer.png' }, 
+    { Nombre: 'Karla', correo: 'karla@gmmail.com', telefono: '7305477760', NumEmpleado: '123456', img: '/public/mujer.png' }, 
+    { Nombre: 'Karla', correo: 'karla@gmmail.com', telefono: '7305477760', NumEmpleado: '123456', img: '/public/mujer.png' }, 
+    { Nombre: 'Karla', correo: 'karla@gmmail.com', telefono: '7305477760', NumEmpleado: '123456', img: '/public/mujer.png' }, 
+    { Nombre: 'Karla', correo: 'karla@gmmail.com', telefono: '7305477760', NumEmpleado: '123456', img: '/public/mujer.png' }, 
+    { Nombre: 'Karla', correo: 'karla@gmmail.com', telefono: '7305477760', NumEmpleado: '123456', img: '/public/mujer.png' }, 
+    { Nombre: 'Karla', correo: 'karla@gmmail.com', telefono: '7305477760', NumEmpleado: '123456', img: '/public/mujer.png' }, 
+    { Nombre: 'Karla', correo: 'karla@gmmail.com', telefono: '7305477760', NumEmpleado: '123456', img: '/public/mujer.png' }, 
+    { Nombre: 'Karla', correo: 'karla@gmmail.com', telefono: '7305477760', NumEmpleado: '123456', img: '/public/mujer.png' }, 
+    { Nombre: 'Karla', correo: 'karla@gmmail.com', telefono: '7305477760', NumEmpleado: '123456', img: '/public/mujer.png' }, 
+    { Nombre: 'Karla', correo: 'karla@gmmail.com', telefono: '7305477760', NumEmpleado: '123456', img: '/public/mujer.png' }, 
+    { Nombre: 'Karla', correo: 'karla@gmmail.com', telefono: '7305477760', NumEmpleado: '123456', img: '/public/mujer.png' }, 
+    { Nombre: 'Karla', correo: 'karla@gmmail.com', telefono: '7305477760', NumEmpleado: '123456', img: '/public/mujer.png' }, 
+    { Nombre: 'Karla', correo: 'karla@gmmail.com', telefono: '7305477760', NumEmpleado: '123456', img: '/public/mujer.png' }, 
+    
 
   ];
 

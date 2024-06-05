@@ -22,6 +22,36 @@ const Dashboardempleado: React.FC = () => {
 
     const rooms = [
         { id: 'A01-105', status: 'Por hacer' },
+        { id: 'A01-105', status: 'Por hacer' },
+
+
+
+        { id: 'A01-105', status: 'Por hacer' },
+        { id: 'A01-105', status: 'Por hacer' },
+
+        { id: 'A01-105', status: 'Por hacer' },
+
+        { id: 'A01-105', status: 'Por hacer' },
+
+        { id: 'A01-105', status: 'Por hacer' },
+        { id: 'A01-105', status: 'Por hacer' },
+
+        { id: 'A01-105', status: 'Por hacer' },
+
+        { id: 'A01-105', status: 'Por hacer' },
+
+        { id: 'A01-105', status: 'Por hacer' },
+
+        { id: 'A01-105', status: 'Por hacer' },
+
+        { id: 'A01-105', status: 'Por hacer' },
+
+        { id: 'A01-105', status: 'Por hacer' },
+
+        { id: 'A01-105', status: 'Por hacer' },
+
+        { id: 'A01-105', status: 'Por hacer' },
+
        
     ];
 

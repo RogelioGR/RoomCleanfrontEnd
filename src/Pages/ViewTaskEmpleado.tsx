@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Container, Row, Col, Button } from 'react-bootstrap';
-
-/*Componentes */
+import Swal from 'sweetalert2';
 import Footer from '../Components/Footer';
 import Header from '../Components/Header';
 import Sidebar from '../Components/Sidebar';
@@ -10,15 +9,24 @@ import Loader from '../Components/Loader';
 const TaskEmpleado: React.FC = () => {
     const [loading, setLoading] = useState(true);
     useEffect(() => {
-        // Simula una carga de datos
         setTimeout(() => {
             setLoading(false);
-        }, 3000); // el tiempo de carga 
+        }, 3000);
     }, []);
 
     const Data = [
         { id: 'A01-105', Descripcion: 'Hacer la cama, Cambiar sábanas y toallas, Limpiar el baño, Aspirar y limpiar suelos, Quitar el polvo.', img1: 'public/habitacion_Sencilla_8.jpg', img2: 'public/habitacion_Sencilla_8.jpg', img3: 'public/habitacion_Sencilla_8.jpg' },
     ];
+
+    const handleGuardarYFinalizar = () => {
+        Swal.fire({
+            title: 'Tarea finalizada',
+            text: 'La tarea se ha finalizado correctamente.',
+            icon: 'success',
+            confirmButtonText: 'Aceptar'
+        });
+    };
+
     return (
         <>
             {loading ? (
@@ -37,7 +45,8 @@ const TaskEmpleado: React.FC = () => {
                                                 <h2 style={{ fontSize: '3rem' }}>Habitación {habitacion.id}</h2>
                                             </Col>
                                         </Row>
-                                        <Row>
+                                        <div>
+                                               <Row>
                                             <Col md={6}>
                                                 <h4>Instrucción</h4>
                                                 <p>{habitacion.Descripcion}</p>
@@ -52,11 +61,14 @@ const TaskEmpleado: React.FC = () => {
                                                 </div>
                                             </Col>
                                         </Row>
-                                        <Row className="mt-4">
+                                         <Row className="mt-4">
                                             <Col className="d-flex justify-content-center">
-                                                <Button variant="success">Guardar</Button>
+                                                <Button variant="success" onClick={handleGuardarYFinalizar}>Guardar </Button>
                                             </Col>
                                         </Row>
+                                        </div>
+                                     
+                                       
                                     </React.Fragment>
                                 ))}
                             </Container>

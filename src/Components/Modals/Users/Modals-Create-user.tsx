@@ -1,10 +1,13 @@
 import React from 'react';
 import { Modal, Button, Row, Col, Form } from 'react-bootstrap';
+import Swal from 'sweetalert2';
+import withReactContent from 'sweetalert2-react-content';
 
 interface MCreateUserProps {
   show: boolean;
   handleClose: () => void;
 }
+const MySwal = withReactContent(Swal);
 
 const MCreateUser: React.FC<MCreateUserProps> = ({ show, handleClose }) => {
   return (
